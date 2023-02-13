@@ -23,11 +23,44 @@ public class Status {
      */
     public static void main(String[] args)
     {
+        
+        
+    Status status = new Status(); 
     Scanner in =new Scanner(System.in);
     System.out.println("Enter the user status code (zero,one,two,three) in string");
     String code = in.next();
-    StausUser t= new StausUser();
-    t.statusDetail(code); 
+    
+    Status progress = new Status();
+    progress.getC(); 
+    progress.getP(); 
+    
+    progress.setC(Code c); 
+    progress.setP(Process p);
+    
+    
+    
+    
+    for(int i=0; i < 1; i++) {
+        
+    
+        
+     if(code == "zero"){
+         System.out.println("REJECTED"); 
+     }
+     else if(code == "one") {
+      System.out.println("PENDING"); 
+     }
+     else if(code == "two") {
+      System.out.println("PROCESSING"); 
+     }
+     else if(code == "three") {
+      System.out.println("APPROVED"); 
+     }
+     else {
+     System.out.println("NOT VALID CODE"); 
+     }
+     
+    }
     }
     
 }
